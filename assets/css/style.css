@@ -1,8 +1,8 @@
-.yarnovin_shadow {
+.yarnovin_rotate {
     filter: drop-shadow(1px 1px 0px #A020F0);
 }
 
-.yarnovin_shadow:hover {
+.yarnovin_rotate:hover {
     animation-name: rotate_logo;
     animation-duration: 1s;
     animation-direction: reverse;
