@@ -1,26 +1,19 @@
-.yarnovin_tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    /* If you want dots under the hoverable text */
+.yarnovin_shadow {
+    filter: drop-shadow(1px 1px 0px #A020F0);
 }
 
-/* Tooltip text */
-.yarnovin_tooltip .yarnovin_tooltip_text_content {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+.yarnovin_shadow:hover {
+    animation-name: rotate_logo;
+    animation-duration: 1s;
+    animation-direction: reverse;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.yarnovin_tooltip:hover .yarnovin_tooltip_content {
-    visibility: visible;
+@keyframes rotate_logo {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
