@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazirmatn-Light.woff2') format('woff2');
+
+}
+
+body {
+    font-family: 'Vazir';
+    background-image: linear-gradient(rgb(154, 41, 154), rgb(109, 16, 109));
+    overflow: hidden;
+}
+
+.payment_image {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 512px;
+    height: 512px;
+}
+
+@media screen and (max-width: 1224px) {
+    body {
+        font-family: Vazir, sans-serif;
+        background-image: linear-gradient(rgb(211, 58, 211), rgb(151, 35, 151));
+
+    }
+
+    .payment_image {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+    }
+}

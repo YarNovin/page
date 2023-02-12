@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>عملیات پرداخت</title>
+</head>
+
+<body>
+    <div class="row align-items-center" style="height: 100vh;">
+        <div class="mx-auto col-10 col-md-8 col-lg-6" style="color: white;">
+            <center>
+                <h2 id="success_confirm_payment">
+                    <b>
+                    .پرداخت با موفقیت انجام شد
+                    </b>
+                </h2>
+            </center>
+            <a href="https://t.me/YarNovin" style="text-decoration: none;">
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="ChangeMessage()">
+                        <b>
+                            تایید پرداخت
+                        </b>
+                    </button>
+                </center>
+            </a>
+            <center>
+                <div class="mx-auto col-lg-6 payment_image">
+                    <img src="../assets/img/payment_successful.png"  class="img-fluid" alt="">
+                </div>
+            </center>
+        </div>
+    </div>
+    <script lang="text/javascript">
+        const success_confirm_payment = document.getElementById("success_confirm_payment");
+        function ChangeMessage() {
+            document.title = 'درحال انتقال ...';
+            success_confirm_payment.innerHTML = '...در حال انتقال به سایت پذیرنده';
+        }        
+    </script>
+
+</body>
+
+</html>
