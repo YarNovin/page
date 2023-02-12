@@ -21,7 +21,7 @@ body {
 @media screen and (max-width: 1224px) {
     body {
         font-family: Vazir, sans-serif;
-        background-image: linear-gradient(rgb(211, 58, 211), rgb(151, 35, 151));
+        background-image: linear-gradient(rgb(211, 58, 211), rgb(104, 14, 104));
 
     }
 
@@ -29,5 +29,11 @@ body {
         position: absolute;
         height: 250px;
         width: 250px;
+    }
+
+    .copyright > p { 
+        text-align: center;
+        position:relative;
+        top: -50px;
     }
 }
